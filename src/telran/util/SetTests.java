@@ -48,6 +48,7 @@ Set<Integer> set;
 		T[] resArr = (T[]) new Object[set.size()];
 		Iterator<T> itr = set.iterator();
 		int index = 0;
+		//[YG] the while loop for iterating usually used only if there is removing inside. If no removing for-each construction is more professional
 		while(itr.hasNext()) {
 			resArr[index++] = itr.next();
 		}
@@ -72,7 +73,7 @@ Set<Integer> set;
 		
 		
 		Integer arr1[] = { -11, 17, -7, 10, 20, 40, 60};
-		Arrays.sort(arr1);
+		Arrays.sort(arr1); //[YG] no sense to sort expected arr1 (you might define it already sorted)
 		assertArrayEquals(arr1, getArrayFromSet(set));
 		
 		Integer arr2[] = { -11, 17, -7, 10, 20, 40 , 60};
