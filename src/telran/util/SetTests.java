@@ -70,7 +70,6 @@ Set<Integer> set;
 		set.add(17);
 		set.add(-7);
 		
-		
 		Integer arr1[] = { -11, 17, -7, 10, 20, 40, 60};
 		Arrays.sort(arr1);
 		assertArrayEquals(arr1, getArrayFromSet(set));
@@ -81,5 +80,5 @@ Set<Integer> set;
 		assertArrayEquals(arr2, getArrayFromSet(setTemp));
 		
 	}
-	
+	// V.R. I don't see test 2.1 from HW12. I mean "strings with case insensitivity".
 }
