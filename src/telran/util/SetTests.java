@@ -77,7 +77,7 @@ Set<Integer> set;
 			assertFalse(num % 2 == 0);
 		}
 	}
-
+ 
 	private <T> void fillSetFromArray(Set<T> res, T[] array) {
 		
 		for(T num: array) {
